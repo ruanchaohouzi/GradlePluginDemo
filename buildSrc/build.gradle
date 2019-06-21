@@ -1,0 +1,23 @@
+apply plugin: 'groovy'
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    //build tools
+    implementation 'com.android.tools.build:gradle:3.4.0'
+    //gradle sdk
+    implementation gradleApi()
+    //groovy sdk
+    implementation localGroovy()
+    //transform
+    implementation 'com.android.tools.build:transform-api:2.0.0-deprecated-use-gradle-api'
+    //javassist
+    implementation 'org.javassist:javassist:3.23.1-GA'
+    //commons-io
+    implementation 'commons-io:commons-io:2.6'
+}
+
+repositories {
+    google()
+    jcenter()
+    mavenCentral()
+}
